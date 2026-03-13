@@ -1,0 +1,8 @@
+streamlit
+openai
+pandas
+beautifulsoup4
+requests
+pdfplumber
+schedule
+python-dotenv
