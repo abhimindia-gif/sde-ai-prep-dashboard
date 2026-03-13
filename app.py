@@ -6,6 +6,9 @@ from modules.analytics import show_progress
 from modules.leetcode_simulator import run_leetcode
 from modules.daily_interview import run_daily_interview
 from modules.ai_planner import run_planner
+from modules.faang_trainer import run_faang_trainer
+from modules.job_market import run_job_market
+from modules.resume_analyzer import run_resume_analyzer
 
 st.title("🚀 AI SDE Prep Dashboard")
 
@@ -14,6 +17,9 @@ menu = st.sidebar.selectbox(
     [
         "Home",
         "AI Planner",
+        "FAANG Trainer",
+        "Market Intelligence",
+        "Resume Analyzer",
         "Daily Interview",
         "Daily Test",
         "Code Practice",
@@ -22,6 +28,9 @@ menu = st.sidebar.selectbox(
         "Progress"
     ]
 )
+
+
+
 
 
 
@@ -81,3 +90,18 @@ elif menu == "Daily Interview":
 elif menu == "AI Planner":
 
     run_planner()
+
+
+elif menu == "FAANG Trainer":
+
+    run_faang_trainer()
+
+
+elif menu == "Market Intelligence":
+
+    run_job_market()
+
+
+elif menu == "Resume Analyzer":
+
+    run_resume_analyzer()
