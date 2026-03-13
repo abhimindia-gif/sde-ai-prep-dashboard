@@ -1,5 +1,5 @@
-streamlit
-openai>=1.0.0
+streamlit>=1.32
+openai>=1.30
 pandas
 beautifulsoup4
 requests
